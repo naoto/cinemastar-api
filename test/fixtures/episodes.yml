@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  animes_id: 1
+  number: 1
+  title: MyString
+  broadcast: 2014-01-19
+
+two:
+  animes_id: 1
+  number: 1
+  title: MyString
+  broadcast: 2014-01-19
