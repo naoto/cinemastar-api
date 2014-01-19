@@ -4,7 +4,7 @@ class Anime < ActiveRecord::Base
 
   def self.list(year = nil, quater = nil)
     if year.nil?
-      Anime.find(:all).map { |h|
+      Anime.all.map { |h|
         { id: h.id,
           title: h.name,
           :next => h.episodes.last.number,
