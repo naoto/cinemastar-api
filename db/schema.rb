@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140119075745) do
+ActiveRecord::Schema.define(version: 20140119084141) do
 
   create_table "admin_users", force: true do |t|
     t.string   "email",               default: "", null: false
@@ -31,21 +31,21 @@ ActiveRecord::Schema.define(version: 20140119075745) do
   create_table "animes", force: true do |t|
     t.string   "name"
     t.integer  "last_episode"
-    t.integer  "serieses_id"
+    t.integer  "seriese_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "broadcasts", force: true do |t|
     t.date     "year"
-    t.integer  "quarters_id"
-    t.integer  "animes_id"
+    t.integer  "quarter_id"
+    t.integer  "anime_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "episodes", force: true do |t|
-    t.integer  "animes_id"
+    t.integer  "anime_id"
     t.integer  "number"
     t.string   "title"
     t.date     "broadcast"

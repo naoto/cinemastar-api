@@ -3,9 +3,9 @@
 one:
   name: MyString
   last_episode: 1
-  serieses_id: 1
+  seriese_id: 1
 
 two:
   name: MyString
   last_episode: 1
-  serieses_id: 1
+  seriese_id: 1

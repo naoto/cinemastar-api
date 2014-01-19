@@ -2,10 +2,10 @@
 
 one:
   year: 2014-01-19
-  quarters_id: 1
-  animes_id: 1
+  quarter_id: 1
+  anime_id: 1
 
 two:
   year: 2014-01-19
-  quarters_id: 1
-  animes_id: 1
+  quarter_id: 1
+  anime_id: 1

@@ -2,8 +2,8 @@ class CreateBroadcasts < ActiveRecord::Migration
   def change
     create_table :broadcasts do |t|
       t.date :year
-      t.integer :quarters_id
-      t.integer :animes_id
+      t.integer :quarter_id
+      t.integer :anime_id
 
       t.timestamps
     end

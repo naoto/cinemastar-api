@@ -3,7 +3,7 @@ class CreateAnimes < ActiveRecord::Migration
     create_table :animes do |t|
       t.string :name
       t.integer :last_episode
-      t.integer :serieses_id
+      t.integer :seriese_id
 
       t.timestamps
     end
