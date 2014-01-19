@@ -7,7 +7,7 @@ class Anime < ActiveRecord::Base
       Anime.all.map { |h|
         { id: h.id,
           title: h.name,
-          :next => h.episodes.last.number,
+          next_episode: h.episodes.last,
           last_episode: h.last_episode,
           year: h.broadcasts.first.year.year,
           season: h.broadcasts.first.quarter.name
@@ -17,7 +17,7 @@ class Anime < ActiveRecord::Base
       Broadcast.where(year: Date::new(year,1,1)).map { |h|
         { id: h.anime.id,
           title: h.anime.name,
-          :next => h.anime.episodes.last.number,
+          next_episode: h.anime.episodes.last,
           last_episode: h.anime.last_episode,
           year: h.year.year,
           season: h.quarter.name
@@ -27,7 +27,7 @@ class Anime < ActiveRecord::Base
       Broadcast.where(year: Date::new(year,1,1)).and(quater_id: quater).map { |h|
         { id: h.anime.id,
           title: h.anime.name,
-          :next => h.anime.episodes.last.number,
+          next_epidose: h.anime.episodes.last,
           last_episode: h.anime.last_episode,
           year: h.year.year,
           season: h.quater.name
@@ -40,7 +40,7 @@ class Anime < ActiveRecord::Base
     Anime.where(name: title).map{ |h|
       { id: h.id,
         title: h.name,
-        :next => h.episodes.last.number,
+        next_episode: h.episodes.last,
         last_episode: h.last_episode,
         year: h.broadcasts.first.year.year,
         season: h.broadcasts.first.quarter.name,
