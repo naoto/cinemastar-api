@@ -46,3 +46,4 @@ end
 #
 gem 'rails_admin'
 gem 'devise'
+gem 'api-agent', :github => 'naoto/api-agent'

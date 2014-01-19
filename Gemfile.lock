@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/naoto/api-agent.git
+  revision: e81456a368fae8dfeba9fdaca0642f5dbb4c232f
+  specs:
+    api-agent (0.0.1)
+      nokogiri
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -149,6 +156,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  api-agent!
   devise
   rails (= 4.0.2)
   rails_admin
